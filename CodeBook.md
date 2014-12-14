@@ -37,17 +37,27 @@ indicate frequency domain signals).
 
 # tidyData.txt
 
-Each value here is a mean of all observed data for each heading for each combination of
+Each value here is a mean of all observed data for each heading for specified combination of
 subject and activity.
 
+data create with the command 'write.table(tidyData,"tidyData.txt",row.name=FALSE)'
+
+first line is header data
+
+fields are seperated by space character (' ')
+
+string fields are enclosed in double quotes ('"')
+
+## Fields
+
 ## subject_id
-  integer 1:30
+  integer (1:30)
   
 ## activity_name
-  string ("LAYING"|"SITTING" "STANDING" "WALKING"|"WALKING_DOWNSTAIRS"|"WALKING_UPSTAIRS")
+  string ("LAYING"|"SITTING"|"STANDING"|"WALKING"|"WALKING_DOWNSTAIRS"|"WALKING_UPSTAIRS")
 
 ## tBodyAcc
- time domain signal
+ time domain signal,
  raw signal
 ### tBodyAcc-mean()-X
  numeric 
@@ -63,7 +73,7 @@ subject and activity.
  numeric 
 
 ## tGravityAcc
- time domain signal
+ time domain signal,
  raw signal
 ### tGravityAcc-mean()-X
  numeric 
@@ -79,7 +89,7 @@ subject and activity.
  numeric 
 
 ## tBodyAccJerk
- time domain signal
+ time domain signal,
  raw signal
 ### tBodyAccJerk-mean()-X
  numeric 
@@ -95,7 +105,7 @@ subject and activity.
  numeric 
 
 ## tBodyGyro
- time domain signal
+ time domain signal, 
  raw signal
 ### tBodyGyro-mean()-X
  numeric 
@@ -111,7 +121,7 @@ subject and activity.
  numeric 
 
 ## tBodyGyroJerk
- time domain signal
+ time domain signal, 
  raw signal
 ### tBodyGyroJerk-mean()-X
  numeric 
@@ -127,7 +137,7 @@ subject and activity.
  numeric 
 
 ## tBodyAccMag
- time domain signal
+ time domain signal, 
  Euclidean norm
 ### tBodyAccMag-mean()
  numeric 
@@ -135,7 +145,7 @@ subject and activity.
  numeric 
 
 ## tGravityAccMag
- time domain signal
+ time domain signal, 
  Euclidean norm
 ### tGravityAccMag-mean()
  numeric 
@@ -143,7 +153,7 @@ subject and activity.
  numeric 
 
 ## tBodyAccJerkMag
- time domain signal
+ time domain signal, 
  Euclidean norm
 ### tBodyAccJerkMag-mean()
  numeric 
@@ -151,7 +161,7 @@ subject and activity.
  numeric 
 
 ## tBodyGyroMag
- time domain signal
+ time domain signal, 
  Euclidean norm
 ### tBodyGyroMag-mean()
  numeric 
@@ -159,7 +169,7 @@ subject and activity.
  numeric 
 
 ## tBodyGyroJerkMag
- time domain signal
+ time domain signal, 
  Euclidean norm
 ### tBodyGyroJerkMag-mean()
  numeric 
