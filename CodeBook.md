@@ -11,9 +11,8 @@ TODO
 Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. 
 International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 
-## Description of data from original source [1]
-Feature Selection
-=================
+## Description of data from original source 
+### Feature Selection
 
 The features selected for this database come from the accelerometer
 and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These
@@ -37,6 +36,7 @@ fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to
 indicate frequency domain signals).
 
 # tidyData.txt
+
 Each value here is a mean of all observed data for each heading for each combination of
 subject and activity.
 
