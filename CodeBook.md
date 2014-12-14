@@ -1,7 +1,9 @@
 TODO
 # Code Book for GetData Class Project data file tidyData.txt
 ##Human Activity Recognition Using Smartphone Data Sets
+
 [project homepage](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
+
 [Original datasets](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) 
 
 ## subject_id
