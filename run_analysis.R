@@ -1,3 +1,23 @@
+# GetData-016 Class Project
+# student: Mark Anderson (coursera.org@ma7.org)
+# date: Sat Dec 13, 2014
+# filename: run_analysis.R
+
+# program produces as output 
+## 'tidyData.txt'
+
+# program assumes GetData.R has been run and the following files are in the working directory
+## X_test.txt          -- measurement data from test set
+## subject_test.txt    -- subject measured for each row X_test.txt
+## y_test.txt          -- activity measured for each row X_test.txt
+## X_train.txt         -- measurement data from train set
+## subject_train.txt   -- subject measured for each row X_train.txt
+## y_train.txt         -- activity measured for each row X_train.txt
+## activity_labels.txt -- column index and label for activity_id in y_{test|train}
+## features.txt        -- column index and label for each column in X_{test|train}
+
+# program follow along closely to number requirements of assignment
+
 # Requirement 1. Merge the training and the test sets to create on data set.
 
 fileColClasses <- function(filename) {

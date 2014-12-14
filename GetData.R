@@ -1,13 +1,25 @@
+# GetData-016 Class Project
+# student: Mark Anderson (coursera.org@ma7.org)
+# date: Sat Dec 13, 2014
+# filename: GetData.R 
+
+# data for 
+#   Human Activity Recognition Using Smartphones Data Set
 
 url  <- 'https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip' 
 file <- 'UCI_HAR_Dataset.zip'
 
+# get file is doesn't already exist
 if (!file.exists(file)) {
   download.file(url,file,method='curl')
+  dateDownloaded <- date()
+  dateDownloaded
 }
-dateDownloaded <- date()
+
+# unzip .zip file
 unzip("UCI_HAR_Dataset.zip")
 
+# copy needed files from sub directories to working directory
 file.copy("./UCI HAR Dataset/activity_labels.txt","activity_labels.txt")
 file.copy("./UCI HAR Dataset/features.txt","features.txt")
 
