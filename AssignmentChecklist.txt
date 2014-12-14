@@ -1,0 +1,8 @@
+[ ] tidyData.txt
+  [ ] use write.table()
+    [ ] using row.name=FALSE
+
+[ ] run_analysis.R
+[ ] README.md
+[ ] CodeBook.md
+[ ] GetData.R
