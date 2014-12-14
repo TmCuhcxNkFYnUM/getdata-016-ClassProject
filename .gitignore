@@ -1,3 +1,4 @@
+*.swp
 .DS_Store
 UCI HAR Dataset/
 UCI_HAR_Dataset.zip
