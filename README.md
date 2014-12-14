@@ -72,3 +72,10 @@ Finally, the 'reshape2' library commands, 'melt' and 'dcast' were used to reshap
 of 'subject_id' and 'activity_name'.  The mean was taken of each variable.  The data was written to 
 'tidyData.txt' with the write.table command using the 'row.name=FALSE' option.
 
+## command
+
+# R -q -f GetData.R
+downloads original .zip data file, unzips, and moves files to working directory
+
+# R -q -f run_analysis.R
+processes files and produces 'tidyData.txt'
