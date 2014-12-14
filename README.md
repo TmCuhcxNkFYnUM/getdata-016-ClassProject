@@ -36,6 +36,8 @@ with the GetData.R file.
 
 The program flow attempts to mirror the assignment requirement in the order they were presented.
 
+### 1
+
 For the first requirement, merging the 'test' and 'train' data, the 'test' and 'train' files
 were processed by a function because the processing of the two raw files differed only in the 
 source files.
@@ -45,18 +47,26 @@ y_underscore file and the corresponding subject from the subject_underscore file
 
 'rbind' was used to create one large data frame from both the 'test' and 'train' data.
 
+### 2
+
 For the second requirement, the file 'feature.txt' was read in.  It has two columns, the column index
 in the measurement file (feature_id) and the name of the measurement (feature_name).  Those desired features were defined as
-those with the string '-mean()' or '-std()' in them.  Grepl was used to create a logical to select
+those with the string '-mean()' or '-std()' in them.  'grepl' was used to create a logical to select
 the desired rows.
 
 'desiredFeatures$feature_id' was used to pull out the required columns from 'totalDS' to create 'desiredDS'.
 
+### 4 (out of order) 
+
 Since all the required data to satisfy the fourth requirement was on hand, 'desiredFeature$feature_name' was
 used to label the column names of 'desiredDS'.
 
+### 3
+
 To satisfy the third requirement, the file 'activity_labels.txt' was read and 'merge' applied on 'desiredDS' along
 the common column 'activity_id'.  The result was placed in 'activityLabelsDS'.
+
+### 5
 
 Finally, the 'reshape2' library commands, 'melt' and 'dcast' were used to reshape the data for each combination
 of 'subject_id' and 'activity_name'.  The mean was taken of each variable.  The data was written to 
